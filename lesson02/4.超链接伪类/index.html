@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        /*默认的状态*/
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        /*鼠标悬浮的状态（只需要记住hover）*/
+        a:hover{
+            color: orange;
+            font-size: 50px;
+        }
+        /*鼠标按住未释放的状态*/
+        a:active{
+            color: green;
+            font-size: 30px;
+        }
+        /*text-shadow:阴影颜色 水平偏移 垂直偏移 阴影半径*/
+        #price{
+            text-shadow: aqua 10px 10px 2px;
+        }
+    </style>
+
+</head>
+<body>
+
+<!--"#"是默认当前页面，表示跳转当前页面-->
+<a href="#">
+    <img src="images/book_cover.jpg" alt="">
+</a>
+
+<p>
+    <a href="#">C++ Primer Plus</a>
+</p>
+
+<p>
+    <a href="">作者：Stephen Prata</a>
+</p>
+<p id="price">
+    价格：￥73
+</p>
+
+</body>
+</html>

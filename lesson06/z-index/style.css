@@ -1,0 +1,37 @@
+#content{
+    width: 380px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 25px;
+    border: 1px solid black;
+}
+ul,li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/*父级元素相对定位*/
+#content ul{
+    position: relative;
+}
+/*子级元素相对于父级元素绝对定位*/
+.tipText,.tipBg{
+    position: absolute;
+    width: 380px;
+    height: 25px;
+    top: 640px;
+}
+/*z-index优先度由999到0递减*/
+.tipText{
+    color: wheat;
+    z-index: 999;
+}
+.tipBg{
+    background: black;
+    /*背景透明度*/
+    opacity: 0.5;
+    /*下面的写法只有IE8之前的浏览器支持，如果项目有可能在老的浏览器上进行，最好两个都写*/
+    filter: alpha(opacity=50);
+}
